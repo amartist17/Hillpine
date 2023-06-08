@@ -54,12 +54,12 @@
     --tg-body-font-family: 'Plus Jakarta Sans', sans-serif;
     /* --tg-heading-font-family: 'Urbanist', sans-serif; */
 	--tg-heading-font-family: 'Cinzel', serif;
-    --tg-primary-color: #107082;
+    --tg-primary-color: #F0CDA1;
 	/* --tg-primary-color: #0055FF; */
 
-    --tg-secondary-color: #F0CDA1;
+    --tg-secondary-color: #0a444e;
 	/* --tg-secondary-color: #00194C; */
-    --tg-body-font-color: #687799;
+    --tg-body-font-color: black;
     --tg-heading-font-color: #00194C;
     --tg-paragraph-color: #687799;
     --tg-section-background: #F8FAFF;
@@ -69,7 +69,7 @@
     --tg-body-line-height: 1.7;
     --tg-heading-line-height: 1.2;
     /* --tg-blue: #0049DC; */
-	--tg-blue: #F0CDA1;
+	--tg-blue: #0a444e;
     --tg-metallic-blue: #324B7D;
     --tg-cornflower-blue: #B3CCFF;
     --tg-steel-blue: #B6C1DB;
