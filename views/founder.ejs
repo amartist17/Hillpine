@@ -25,15 +25,116 @@
         <link rel="stylesheet" href="/assets/css/default.css">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="/assets/css/responsive.css">
-    </head>
-    <body>
+        <style>
+            .mgmt_image {
+position: relative;
+overflow: hidden;
+line-height: 0;
+}
+.mgmt_white-card {
+    /* display: flex;
+    align-items: stretch; */
+    margin: 0 auto 2rem;
+    /* justify-content: center; */
+    background-color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 0 0.5rem 1.5625rem 0 rgba(0,0,0,0.3);
+    border-radius: 0.1875rem;
+    position: relative;
+}
 
-        <!-- preloader -->
-        <div id="preloader">
-            <div id="loading-center">
-                <div class="loader">
-                    <style>
-    .pre{
+.mgmt_overlay {
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(50,50,50,0.9);
+transition: 0.2s opacity;
+line-height: 1.5;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mgmt_overlay:hover{
+opacity: 1;
+}
+.mgmt_tvcell {
+display: flex;
+flex-basis: 322px;
+}
+.mgmt_about, .mgmt_twitter, .mgmt_linkedin {
+display: block;
+flex-grow: 1;
+width: calc(50% - 0.5px);
+text-align: center;
+}
+.mgmt_name-title {
+padding: 1.8125rem 0 1.4375rem;
+margin: 0;
+position: relative;
+word-break: break-word;
+}
+.mgmt_tvcell a:nth-child(2) {
+border-left: 1px solid #fff;
+}
+.mgmt_about::before, .mgmt_twitter::before, .mgmt_linkedin::before {
+background-position: -59px -54px;
+width: 60px;
+height: 77px;
+}
+.mgmt_name-title h3 {
+vertical-align: baseline;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+padding: 0.1875rem 0;
+line-height: 1.375em;
+letter-spacing: 0.08em;
+color: #ff5c35;
+font-size: 1.5rem;
+margin: 0;
+}
+.mgmt_name-title h4 {
+vertical-align: baseline;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+padding: 0.1875rem 0;
+line-height: 1.375em;
+letter-spacing: 0.08em;
+color: #2e475d;
+font-size: 1rem;
+margin: 0;
+font-weight: normal;
+}
+.mgmt_about::before,  .mgmt_twitter::before, .mgmt_linkedin::before {
+content: '';
+background: url('/images/about.png');
+display: block;
+width: 100px;
+height: 100px;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+/* position: absolute;
+top: 0%;
+left: 50%; */
+margin: 0% auto;
+}
+.mgmt_linkedin::before {
+content: '';
+background: url('/images/twitter.png') ;
+display: block;
+width: 100px;
+height: 100px;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+}
+
+
+.pre{
 	font-size:40px;
 	position: absolute;
 	top: 50%;
@@ -72,7 +173,15 @@
 		width: 0;
 	}
 }
-                    </style>
+        </style>
+    </head>
+    <body>
+
+        <!-- preloader -->
+        <div id="preloader">
+            <div id="loading-center">
+                <div class="loader">
+                    
                     <h1 class="pre" data-text="Hillpine...">Hillpine...</h1>
                 </div>
             </div>
@@ -120,7 +229,7 @@
             <!-- breadcrumb-area-end -->
 
             <!-- team-details-area -->
-            <section class="team-details-area pt-120 pb-120">
+            <!-- <section class="team-details-area pt-120 pb-120">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -136,7 +245,6 @@
                                     </ul>
                                     <div class="td-info-bottom">
                                         <a href="/team" class="btn btn-three">Meet my team</a>
-                                        <!-- <a href="#" class="share-btn"><img src="/assets/img/icons/share.svg" alt="">Share</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -176,9 +284,91 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- team-details-area-end -->
+            <section class="team-area-four team-bg" data-background="/assets/img/bg/team_bg.jpg">
+                <div class="container" >
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="section-title text-center mb-50">
+                                <span class="sub-title">Skilled Team Members</span>
+                                <h2 class="title">Meet Our Dedicated Team</h2>
+                                <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="row justify-content-center">
+                         
+                        
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
 
+                            <div class="mgmt_white-card" >
+                                <div class="mgmt_image">
+                                    <div class="mgmt_overlay">
+                                        <div class="mgmt_tvcell">
+                                            
+                                            <a class="mgmt_about" href="https://www.hubspot.com/company/management/yamini-rangan?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team"><span>About</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                            
+                                                <a class="mgmt_linkedin" href="https://www.linkedin.com/in/yaminirangan/?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team" target="_blank"><span>Follow</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <img src="/images/founder.jpg" alt="Yamini Rangan"  >
+                                </div>
+                                <div class="mgmt_name-title">
+                                    <h3>Ricky Saraf</h3>
+                                    <h4>Founder, Hillpine Consulting</h4>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+
+                            <div class="mgmt_white-card" >
+                                <div class="mgmt_image">
+                                    <div class="mgmt_overlay">
+                                        <div class="mgmt_tvcell">
+                                            
+                                            <a class="mgmt_about" href="https://www.hubspot.com/company/management/yamini-rangan?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team"><span>About</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                            
+                                                <a class="mgmt_linkedin" href="https://www.linkedin.com/in/yaminirangan/?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team" target="_blank"><span>Follow</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <img src="/images/founder.jpg" alt="Yamini Rangan"  >
+                                </div>
+                                <div class="mgmt_name-title">
+                                    <h3>Ricky Saraf</h3>
+                                    <h4>Founder, Hillpine Consulting</h4>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+
+                            <div class="mgmt_white-card" >
+                                <div class="mgmt_image">
+                                    <div class="mgmt_overlay">
+                                        <div class="mgmt_tvcell">
+                                            
+                                            <a class="mgmt_about" href="https://www.hubspot.com/company/management/yamini-rangan?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team"><span>About</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                            
+                                                <a class="mgmt_linkedin" href="https://www.linkedin.com/in/yaminirangan/?hubs_content=www.hubspot.com%252F&amp;hubs_content-cta=Management%2520Team" target="_blank"><span>Follow</span><span class="visually-hidden"> Yamini Rangan</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <img src="/images/founder.jpg" alt="Yamini Rangan"  >
+                                </div>
+                                <div class="mgmt_name-title">
+                                    <h3>Ricky Saraf</h3>
+                                    <h4>Founder, Hillpine Consulting</h4>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
 
         </main>
         <!-- main-area-end -->

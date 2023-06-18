@@ -29,10 +29,13 @@
             .icon{
                 color: #00194c !important;
             }
-            .team-thumb-four img{
+            @media only screen and (min-width: 800px) {
+                .team-thumb-four img{
                 width: 280px;
                 height: 290px;
             }
+}
+            
         </style>
     </head>
     <body>
@@ -137,8 +140,8 @@
 
 
                  <!-- team-area -->
-                 <section class="team-area team-bg" data-background="/assets/img/bg/team_bg.jpg">
-                    <div class="container" style="position: relative;">
+                 <section class="team-area-four team-bg" data-background="/assets/img/bg/team_bg.jpg">
+                    <div class="container" >
                         <div class="row justify-content-center">
                             <div class="col-xl-6 col-lg-8">
                                 <div class="section-title text-center mb-50">
@@ -149,7 +152,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner1.webp" alt="">
@@ -171,7 +174,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner4.webp" alt="">
@@ -195,7 +198,7 @@
                             </div>
                             
                             
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner3.webp" alt="">
@@ -220,7 +223,7 @@
                             </div>
                             </div>
                             <div class="row justify-content-center">
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner5.webp" alt="">
@@ -242,7 +245,7 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner6.webp" alt="">
@@ -265,7 +268,7 @@
                                 </div>
                             </div>
                             
-                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner8.webp" alt="">
@@ -289,7 +292,7 @@
                             </div>
                             </div>
                             <div class="row justify-content-center">
-                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner9.webp" alt="">
@@ -311,7 +314,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner2.webp" alt="">
@@ -333,7 +336,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
                                         <img src="/images/partner7.webp" alt="">
@@ -355,182 +358,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <style>
-                                .team-member {
-    max-width: 100%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    padding: 0 15px;
-    position: relative;
-    margin-bottom: 2.25rem;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-.team-member .card {
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: -webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: transform .6s cubic-bezier(.63,-.32,.4,1.39),-webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.card-front{
-    line-height: 1.15;
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    transition: .6s;
-    backface-visibility: hidden;
-    transform: rotateY(0);
-    width: 100%;
-}
-.team-member__image{
-    line-height: 1.15;
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    /* padding-top: 100%; */
-    position: relative;
-    margin-bottom: 1.25rem;
-}
-.image-holder{
-    /* line-height: 1.15; */
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.image-holder img{
-    line-height: 1.15;
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    border-style: none;
-    filter: grayscale(100%);
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-}
-.team-member__body{
-    line-height: 1.15;
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-}
-.team-member__title {
-    font-family: "Poppins Bold";
-    font-size: 16px;
-    margin-bottom: 0.25rem;
-}
-.team-member__subtitle {
-    font-size: 14px;
-    color: #8ca5c6;
-}
-.team-member .card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transition: .6s;
-    transition: .6s;
-    -webkit-perspective: preserve-3d;
-    perspective: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-}
-.team-member__image {
-    padding-top: 100%;
-    position: relative;
-    margin-bottom: 1.25rem;
-}
-.img-holder{
-    line-height: 1.15;
-    -webkit-text-size-adjust: none;
-    font-size: 100%!important;
-    font-family: Poppins;
-    color: #232323;
-    box-sizing: border-box;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.team-member__image .img-holder img {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-}
-.team-member__title {
-    font-family: "Poppins Bold";
-    font-size: 16px;
-    margin-bottom: 0.25rem;
-}
-.team-member__subtitle {
-    font-size: 14px;
-    color: #8ca5c6;
-}
-                            </style>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9">
-                                <div class="team-member"><div class="card"><div class="card-front"><div class="team-member__image"><figure class="img-holder"><img src="/images/partner7.webp"></figure></div><div class="team-member__body"><h3 class="team-member__title">Dragoslav Kotorac</h3><span class="team-member__subtitle">Chief Executive Officer</span></div></div><div class="card-back"><div class="team-member__image"><figure class="img-holder"><img src="../img/team/dragoslav-kid.jpg"></figure></div><div class="team-member__body"><h3 class="team-member__title">Dragoslav Kotorac</h3><span class="team-member__subtitle">Wanted to be an archaeologist</span></div></div></div></div>
-                            </div> -->
-                            
                             
                         </div>
                         
