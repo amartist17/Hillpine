@@ -4,7 +4,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hillpine - Team</title>
+        <title>Hillpine - Inside Hillpine</title>
         <meta name="description" content="Hillpine">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -84,12 +84,37 @@
 		width: 0;
 	}
 }
-.team-item-four img{
-    transition: 0.5s;
+.image-container {
+  position: relative;
+  width: 280px;
+  height: 290px;
 }
-.team-item-four img:hover{
-    transform: scale(1.1);
+
+.first-image,
+.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
 }
+
+.second-image {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.image-container:hover .first-image {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.image-container:hover .second-image {
+  transform: rotateY(0);
+  opacity: 1;
+}
+
                     </style>
                     <h1 class="pre" data-text="Hillpine...">Hillpine...</h1>
                    
@@ -155,18 +180,11 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner1.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner1.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner1.webp" alt="Second Image">
+                                          </div>
+                                        
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Abishesh Lama Tamang</a></h2>
@@ -177,18 +195,11 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner4.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner4.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner4.webp" alt="Second Image">
+                                          </div>
+                                        
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Aman Mogra</a></h2>
@@ -201,18 +212,11 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner3.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner3.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner3.webp" alt="Second Image">
+                                          </div>
+                                        
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Vishal Kumar</a></h2>
@@ -226,18 +230,10 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner5.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner5.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner5.webp" alt="Second Image">
+                                          </div>
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Vashu Sharma</a></h2>
@@ -248,18 +244,11 @@
                              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner6.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner6.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner6.webp" alt="Second Image">
+                                          </div>
+                                        
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Rishav Mallya</a></h2>
@@ -271,18 +260,11 @@
                              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner8.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner8.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner8.webp" alt="Second Image">
+                                          </div>
+                                        
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Niranjana P Raj</a></h2>
@@ -294,19 +276,11 @@
                             <div class="row justify-content-center">
                              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
-                                    <div class="team-thumb-four">
-                                        <img src="/images/partner9.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <div class="team-thumb-four" >
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner9.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner9.webp" alt="Second Image">
+                                          </div>
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Sampriya Sukumar</a></h2>
@@ -317,18 +291,10 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner2.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner2.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner2.webp" alt="Second Image">
+                                          </div>
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Ayush Maheshwari</a></h2>
@@ -339,18 +305,10 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
                                 <div class="team-item-four">
                                     <div class="team-thumb-four">
-                                        <img src="/images/partner7.webp" alt="">
-                                        <div class="team-social-three">
-                                        <div class="social-toggle-icon">
-                                            <i class="fas fa-share-alt"></i>
-                                        </div>
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner7.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner7.webp" alt="Second Image">
+                                          </div>
                                     </div>
                                     <div class="team-content-four">
                                         <h2 class="title"><a href="/team">Raunak Maheshwari</a></h2>
@@ -358,6 +316,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             
                         </div>
                         

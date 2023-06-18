@@ -22,7 +22,7 @@ app.get("/services", (req, res) => {
   res.render("services");
 });
 
-app.get("/team", (req, res) => {
+app.get("/inside-hillpine", (req, res) => {
   res.render("team");
 });
 app.get("/founder", (req, res) => {
