@@ -14,11 +14,23 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-// app.get("/about", (req, res) => {
-//   res.render("about");
-// });
-// app.get("/team", (req, res) => {
-//   res.render("team");
-// });
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services");
+});
+
+app.get("/team", (req, res) => {
+  res.render("team");
+});
+app.get("/founder", (req, res) => {
+  res.render("founder");
+});
+
+app.get("/clientele", (req, res) => {
+  res.render("clientele");
+});
 
 module.exports = app;
