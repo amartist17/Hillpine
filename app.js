@@ -25,7 +25,7 @@ app.get("/services", (req, res) => {
 app.get("/inside-hillpine", (req, res) => {
   res.render("team");
 });
-app.get("/founder", (req, res) => {
+app.get("/founding-team", (req, res) => {
   res.render("founder");
 });
 
