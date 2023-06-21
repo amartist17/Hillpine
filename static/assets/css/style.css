@@ -54,11 +54,11 @@
     --tg-body-font-family: 'Plus Jakarta Sans', sans-serif;
     /* --tg-heading-font-family: 'Urbanist', sans-serif; */
 	--tg-heading-font-family: 'Cinzel', serif;
-    --tg-primary-color: #F0CDA1;
+    --tg-primary-color: #0a444e;
 	/* --tg-primary-color: #0055FF; */
 
-    --tg-secondary-color: #0a444e;
-	/* --tg-secondary-color: #00194C; */
+    /* --tg-secondary-color: #0a444e; */
+	--tg-secondary-color: #F0CDA1;
     --tg-body-font-color: black;
     --tg-heading-font-color: #00194C;
     --tg-paragraph-color: #687799;
