@@ -28,6 +28,12 @@ app.get("/inside-hillpine", (req, res) => {
 app.get("/founding-team", (req, res) => {
   res.render("founder");
 });
+app.get("/founder-1", (req, res) => {
+  res.render("founder1");
+});
+app.get("/founder-2", (req, res) => {
+  res.render("founder2");
+});
 
 app.get("/clientele", (req, res) => {
   res.render("clientele");
