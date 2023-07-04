@@ -1,0 +1,275 @@
+<style>
+    .stepper-container {
+        position: relative;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .stepper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        gap: 1.5rem;
+        padding: 16px;
+
+        @media (min-width: 992px) {
+            gap: 3rem;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 6rem;
+        }
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        color: rgba(151, 151, 151, .40);
+        cursor: pointer;
+    }
+
+    .step.active {
+        color: #349caf;
+    }
+
+    .icon {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .step-title {
+        text-align: center;
+        background-color: white;
+        font-size: 16px;
+        z-index: 2;
+        width: 100%;
+        color: #232323;
+    }
+
+    .progress-bar-container {
+        position: absolute;
+        bottom: 28px;
+        height: 2.5px;
+        left: 0;
+        right: 0;
+        margin: 0 16px;
+    }
+
+    .progress-bar {
+        position: relative;
+        height: 2.5px;
+        background: rgba(151, 151, 151, .32);
+    }
+
+    .progress {
+        position: absolute;
+        height: 2.5px;
+        background: #349caf;
+        width: 0;
+    }
+
+    @media (max-width: 600px) {
+        .stepper {
+            flex-direction: column;
+        }
+
+        .step {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+
+
+
+
+
+    .step-detail {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        @media (min-width:768px) {
+            opacity: 0;
+            visibility: hidden;
+            height: 0px;
+            margin-bottom: 0;
+            transition: all 0.7s ease-in-out;
+            transform: translateY(400px);
+        }
+    }
+
+    .step-detail.active {
+        display: flex;
+
+        @media (min-width:768px) {
+            opacity: 1;
+            visibility: visible;
+            height: fit-content;
+            transform: translateY(0px);
+        }
+    }
+
+    .step-details-container h4 {
+        color: #349caf;
+    }
+
+    .step-detail>div:first-child {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width:768px) {
+            display: none;
+        }
+    }
+
+    .step-detail .icon {
+        color: #349caf;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="container py-5">
+    <div class="stepper-container">
+        <div class="stepper">
+            <div class="step active" id="step1">
+                <i class="fa fa-user icon"></i>
+                <span class="step-title">Define</span>
+            </div>
+            <div class="step" id="step2">
+                <i class="fa fa-list icon"></i>
+                <span class="step-title">Plan</span>
+            </div>
+            <div class="step" id="step3">
+                <i class="fa fa-cogs icon"></i>
+                <span class="step-title">Build</span>
+            </div>
+            <div class="step" id="step4">
+                <i class="fa fa-rocket icon"></i>
+                <span class="step-title">Launch</span>
+            </div>
+            <div class="step" id="step5">
+                <i class="fa fa-chart-bar icon"></i>
+                <span class="step-title">Measure</span>
+            </div>
+            <div class="step" id="step6">
+                <i class="fa fa-redo icon"></i>
+                <span class="step-title">Iterate</span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="step-details-container">
+        <div class="step-detail active" id="detail1">
+            <div>
+                <i class="fa fa-user icon"></i>
+                <span class="step-title">Define</span>
+            </div>
+            <div>
+                <h4>Step 1</h4>
+                <p>Define the problem you are trying to solve. What is the goal of the project? What are the
+                    requirements? What are the constraints?</p>
+            </div>
+        </div>
+        <div class="step-detail" id="detail2">
+            <div>
+                <i class="fa fa-list icon"></i>
+                <span class="step-title">Plan</span>
+            </div>
+            <div>
+                <h4>Step 2</h4>
+                <p>Plan the project. What are the steps you need to take to achieve the goal? What are the milestones?
+                    What are the deadlines?</p>
+            </div>
+        </div>
+        <div class="step-detail" id="detail3">
+            <div>
+                <i class="fa fa-cogs icon"></i>
+                <span class="step-title">Build</span>
+            </div>
+            <div>
+                <h4>Step 3</h4>
+                <p>Build the project. What are the steps you need to take to achieve the goal? What are the milestones?
+                    What are the deadlines?</p>
+            </div>
+        </div>
+        <div class="step-detail" id="detail4">
+            <div>
+                <i class="fa fa-rocket icon"></i>
+                <span class="step-title">Launch</span>
+            </div>
+            <div>
+                <h4>Step 4</h4>
+                <p>Launch the project. What are the steps you need to take to achieve the goal? What are the milestones?
+                    What are the deadlines?</p>
+            </div>
+        </div>
+        <div class="step-detail" id="detail5">
+            <div>
+                <i class="fa fa-chart-bar icon"></i>
+                <span class="step-title">Measure</span>
+            </div>
+            <div>
+                <h4>Step 5</h4>
+                <p>Measure the project. What are the steps you need to take to achieve the goal? What are the
+                    milestones? What are the deadlines?</p>
+            </div>
+        </div>
+        <div class="step-detail" id="detail6">
+            <div>
+                <i class="fa fa-redo icon"></i>
+                <span class="step-title">Iterate</span>
+            </div>
+            <div>
+                <h4>Step 6</h4>
+                <p>Iterate the project. What are the steps you need to take to achieve the goal? What are the
+                    milestones? What are the deadlines?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var steps = document.querySelectorAll('.step');
+        const stepCount = steps.length;
+        var details = document.querySelectorAll('.step-detail');
+        var progress = document.getElementById('progress');
+
+        steps.forEach(function (step, index) {
+            step.addEventListener('click', function () {
+                steps.forEach(function (s) {
+                    s.classList.remove('active');
+                });
+
+                details.forEach(function (detail) {
+                    detail.classList.remove('active');
+                });
+
+                this.classList.add('active');
+
+                var stepNumber = this.id.replace('step', '');
+                document.getElementById('detail' + stepNumber).classList.add('active');
+
+                var progressWidth = ((stepNumber - 1) / (stepCount - 1)) * 100;
+                console.log(progressWidth);
+                progress.style.width = progressWidth + '%';
+            });
+        });
+    });
+</script>
