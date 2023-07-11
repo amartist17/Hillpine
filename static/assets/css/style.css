@@ -56,7 +56,7 @@
     --tg-body-font-family: 'Avenir', sans-serif;
 
     /* --tg-heading-font-family: 'Urbanist', sans-serif; */
-	--tg-heading-font-family: 'Cinzel', serif;
+	--tg-heading-font-family: 'Avenir', sans-serif;
     --tg-primary-color: #0a444e;
 	/* --tg-primary-color: #0055FF; */
 
@@ -178,6 +178,7 @@ h6 {
 	font-style: normal;
 	line-height: var(--tg-heading-line-height);
 	font-weight: var(--tg-heading-font-weight);
+	text-transform: capitalize;
 }
 h1 a,
 h2 a,
