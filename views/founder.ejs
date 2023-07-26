@@ -202,6 +202,118 @@ div span{
 
 
         </style>
+        <style>
+
+            span .designation{
+                display: none !important;
+            }
+            .pre{
+            font-size:40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            color:white;
+        
+        }
+        .pre:before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #55DDB9;
+            overflow: hidden;
+            animation: animate 1s linear infinite;
+            border-right: 4px solid #55DDB9;
+            
+        }
+        
+        @keyframes animate{
+        
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 99%;
+            }
+            100%{
+                width: 0;
+            }
+        }
+        /* .designation{
+            display: inline-block !important;
+            
+        }
+        .designation + a{
+            margin: 0 8px;
+            
+        } */
+        .image-container {
+          position: relative;
+          width: 280px;
+          height: 290px;
+        }
+        
+        .first-image{
+            filter: grayscale(100%);
+        }
+        
+        .first-image,
+        .second-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.5s;
+        
+        }
+        
+        .second-image {
+          transform: rotateY(180deg);
+          opacity: 0;
+        }
+        
+        .image-container:hover .first-image {
+          transform: rotateY(180deg);
+          opacity: 0;
+        }
+        
+        .image-container:hover .second-image {
+          transform: rotateY(0);
+          opacity: 1;
+          /* filter: blur(2px); */
+        }
+        /* .image-container .mail{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-100%, -50%);
+            z-index: 100;
+            font-size: 36px;
+            opacity: 0;
+        }
+        .image-container .linkedin{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(100%, -50%);
+            z-index: 100;
+            font-size: 36px;
+            opacity: 0;
+        }
+        .image-container:hover a{
+            opacity: 1 !important;
+            color: #F0CDA1;
+        } */
+        
+                            </style>
     </head>
     <body>
 
@@ -409,6 +521,362 @@ div span{
                     </div>
                     </div>
                     </section>
+
+                 <!-- team-area -->
+                 <section class="team-area-four team-bg" data-background="/assets/img/bg/team_bg.jpg">
+                    <div class="container" >
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="section-title text-center mb-50">
+                                    <span class="sub-title">Skilled Team Members</span>
+                                    <h2 class="title">Meet Our Dedicated Team</h2>
+                                    <p>Individually, we are drops. Together, we are an ocean of possibilities, achieving greatness through unified effort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <!-- <a class="mail" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a>
+                                            <a class="linkedin" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a> -->
+                                            <img class="first-image" src="/images/founder.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/founder.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:rickysaraf@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ricky-saraf/"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Ricky Saraf</a></h2>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/Prateek.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/Prateek.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:prateeklodha@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/prateek-lodha-a7394548"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Prateek Lodha
+                                        </a></h2>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <!-- <a class="mail" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a>
+                                            <a class="linkedin" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a> -->
+                                            <img class="first-image" src="/images/partner1.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner1.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/lamaat"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Abishesh Lama Tamang</a></h2>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <div class="row justify-content-center">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner5.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner5.webp" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:Vashusharma@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/vashu-sharma-61630276"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Vashu Sharma</a></h2>
+                                        
+                                       </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner6.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner6.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:rishavmallya@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/rishavmallya"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Rishav Mallya</a></h2>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner8.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner8.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:niranjana@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/niranjana-raj-0ab579212"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Niranjana P Raj</a></h2>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row justify-content-center">
+                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four" >
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner9.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner9.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:sampriya@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/sampriya-sukumar-51b889bb"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Sampriya Sukumar</a></h2>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner2.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner2.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:ayushmaheshwari@hillpinconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ayush-maheshwari-236a89128"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Ayush Maheshwari</a></h2>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner7.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner7.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:raunakmaheshwari@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/raunak-maheshwari-1b78968b"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Raunak Maheshwari</a></h2>
+                                        
+                                        </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner4.webp" alt="First Image">
+                                            <img class="second-image" src="/images/partner4.webp" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:amanmogra@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/aman-mogra-6a5b13201"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Aman Mogra</a></h2>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                <div class="team-item-four">
+                                    <div class="team-thumb-four">
+                                        <div class="image-container">
+                                            <img class="first-image" src="/images/partner3.jpg" alt="First Image">
+                                            <img class="second-image" src="/images/partner3.jpg" alt="Second Image">
+                                            <div class="team-social-three">
+                                                <div class="social-toggle-icon">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                                <ul class="list-wrap">
+                                                    <li><a href="mailto:vishalkumar@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/vishalkumar98"><i class="fab fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="team-content-four">
+                                        <h2 class="title"><a href="/team">Vishal Kumar</a></h2>
+                                        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                               <div class="team-item-four">
+                                   <div class="team-thumb-four" >
+                                       <div class="image-container">
+                                           <img class="first-image" src="/images/Arti Pic.jpg" alt="First Image">
+                                           
+                                           <img class="second-image" src="/images/Arti Pic.jpg" alt="Second Image">
+                                           <div class="team-social-three">
+                                            <div class="social-toggle-icon">
+                                                <i class="fas fa-share-alt"></i>
+                                            </div>
+                                            <ul class="list-wrap">
+                                                <li><a href="mailto:artiupadhyay@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/in/arti-upadhyay"><i class="fab fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                       
+                                   </div>
+                                   <div class="team-content-four">
+                                       <h2 class="title"><a href="/team">Arti Upadhyay
+                                    </a></h2>
+                                       
+                                       </div>
+                               </div>
+                           </div>
+                           
+                        
+                        
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                            <div class="team-item-four">
+                                <div class="team-thumb-four">
+                                    <div class="image-container">
+                                        <!-- <a class="mail" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a>
+                                        <a class="linkedin" href="mailto:abishesh@hillpineconsulting.in"><i class="far fa-envelope"></i></a> -->
+                                        <img class="first-image" src="/images/Naman.jpg" alt="First Image">
+                                        <img class="second-image" src="/images/Naman.jpg" alt="Second Image">
+                                        <div class="team-social-three">
+                                            <div class="social-toggle-icon">
+                                                <i class="fas fa-share-alt"></i>
+                                            </div>
+                                            <ul class="list-wrap">
+                                                <li><a href="mailto:naman@hillpineconsulting.in"><i class="far fa-envelope"></i></a></li>
+                                                <li><a href="linkedin.com/in/naman-asthana-0a4894b4"><i class="fab fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="team-content-four">
+                                    <h2 class="title"><a href="/team">Naman Asthana</a></h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+                </section>
                     <!-- <section class="team-details-area pt-120 pb-120">
                         <div class="container">
                             <div class="row">
