@@ -23,7 +23,7 @@
 	// };
 
 	$(document).ready(function () {
-		var logo = $('.logo');
+		var logo = $('.header-logo');
 
 		// Store the initial position and size.
 		var originalWidth = logo.width();
@@ -47,7 +47,7 @@
 	});
 
 	$(window).on('load', function () {
-		var logo = $('.logo');
+		var logo = $('.header-logo');
 
 		// Stop any running animations before starting a new one.
 		logo.stop().animate({

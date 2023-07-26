@@ -70,6 +70,15 @@
         background-color: #efcda0;
     }
 
+    #united-states>div:first-child {
+        background-color: #aabbcc;
+    }
+
+    #australia>div:first-child {
+        background-color: #f28e1c;
+    }
+
+
     .pills-holder {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -129,7 +138,9 @@
             "IN": "#f99827",  // India
             "GB": "#efcda0",  // United Kingdom
             "FR": "#064854",  // France
-            "DE": "#106f82"   // Germany
+            "DE": "#106f82",   // Germany
+            "US": "#aabbcc",   // United States
+            "AU" : "#f28e1c"   //Australia
         };
         polygonSeries.mapPolygons.template.adapters.add("fill", function (fill, target) {
             if (target.dataItem.dataContext && countryColorMap.hasOwnProperty(target.dataItem.dataContext.id)) {
@@ -167,24 +178,48 @@
                     document.getElementById('germany').style.display = 'none';
                     document.getElementById('france').style.display = 'none';
                     document.getElementById('united-kingdom').style.display = 'none';
+                    document.getElementById('united-states').style.display = 'none';
+                    document.getElementById('australia').style.display = 'none';
                 }
                 else if (target.dataItem.dataContext.id == 'FR') {
                     document.getElementById('india').style.display = 'none';
                     document.getElementById('germany').style.display = 'none';
                     document.getElementById('france').style.display = 'block';
                     document.getElementById('united-kingdom').style.display = 'none';
+                    document.getElementById('united-states').style.display = 'none';
+                    document.getElementById('australia').style.display = 'none';
                 }
                 else if (target.dataItem.dataContext.id == 'DE') {
                     document.getElementById('india').style.display = 'none';
                     document.getElementById('germany').style.display = 'block';
                     document.getElementById('france').style.display = 'none';
                     document.getElementById('united-kingdom').style.display = 'none';
+                    document.getElementById('united-states').style.display = 'none';
+                    document.getElementById('australia').style.display = 'none';
                 }
                 else if (target.dataItem.dataContext.id == 'GB') {
                     document.getElementById('india').style.display = 'none';
                     document.getElementById('germany').style.display = 'none';
                     document.getElementById('france').style.display = 'none';
                     document.getElementById('united-kingdom').style.display = 'block';
+                    document.getElementById('united-states').style.display = 'none';
+                    document.getElementById('australia').style.display = 'none';
+                }
+                else if (target.dataItem.dataContext.id == 'US') {
+                    document.getElementById('india').style.display = 'none';
+                    document.getElementById('germany').style.display = 'none';
+                    document.getElementById('france').style.display = 'none';
+                    document.getElementById('united-kingdom').style.display = 'none';
+                    document.getElementById('united-states').style.display = 'block';
+                    document.getElementById('australia').style.display = 'none';
+                }
+                else if (target.dataItem.dataContext.id == 'AU') {
+                    document.getElementById('india').style.display = 'none';
+                    document.getElementById('germany').style.display = 'none';
+                    document.getElementById('france').style.display = 'none';
+                    document.getElementById('united-kingdom').style.display = 'none';
+                    document.getElementById('united-states').style.display = 'none';
+                    document.getElementById('australia').style.display = 'block';
                 }
             }
             else {
@@ -192,6 +227,8 @@
                 document.getElementById('germany').style.display = 'none';
                 document.getElementById('france').style.display = 'none';
                 document.getElementById('united-kingdom').style.display = 'none';
+                document.getElementById('united-states').style.display = 'none';
+                document.getElementById('australia').style.display = 'none';
             }
         });
 
@@ -308,9 +345,59 @@
                 </div>
             </div>
 
+            <div class="country-card" id="australia">
+                <div>Australia</div>
+                <div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="fas fa-handshake d-block"></i>
+                        <p class="m-0">XX Deals</p>
+                    </div>
+
+                    <div class="pills-holder">
+                        <div>
+                            Infrastructure
+                        </div>
+                        <div>
+                            Transport
+                        </div>
+                        <div>
+                            Real Estate
+                        </div>
+                        <div>
+                            Energy
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="country-card" id="united-states">
+                <div>United States</div>
+                <div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="fas fa-handshake d-block"></i>
+                        <p class="m-0">XX Deals</p>
+                    </div>
+                    <div class="pills-holder">
+                        <div>
+                            Infrastructure
+                        </div>
+                        <div>
+                            Transport
+                        </div>
+                        <div>
+                            Real Estate
+                        </div>
+                        <div>
+                            Energy
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
             <p class="map-desc">
                 <em>Given the above-diversified experience of our founding directors with global consultancy firms in
-                    the <b>UK, Germany, France, and India,</b> we can comprehensivelv provide a multi-dimensional view
+                    the <b>UK, Germany, France, US, Australia and India,</b> we can comprehensivelv provide a multi-dimensional view
                     of the expanded risks and opportunities that lie ahead for the business.</em>
             </p>
         </div>
